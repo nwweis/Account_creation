@@ -1,5 +1,3 @@
-import sys
-import os
 import re
 import hashlib
 import sqlite3
@@ -151,11 +149,6 @@ def account(option, dbconn): # Called from Main()
 
 ## MAIN ##
 def main():
-    # Check if database exist, otherwise create database. Create connection.
-    # db_path = 'login_db.db'
-    # if not os.path.exists(db_path):
-    #     create_db(db_path)
-
     dbconn = create_con(db_path)
     
     # Main Function
